@@ -8,8 +8,8 @@ import QueryProvider from "@/components/global/query-provider";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Learning Hub",
-  description: "Your personal learning assistant",
+  title: "VAAM",
+  description: "VAAM is a revolutionary ride-sharing company with zero commission, empowering drivers to earn more and take control.",
 };
 
 export default function RootLayout({

@@ -8,14 +8,16 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 60 33% 98%;      /* Base background */
+    --hero-bg: 69 100% 97%;        /* Light yellow/lime for hero - similar to image */
+    --about-bg: 0 0% 100%;         /* Pure white for about section */
+    --foreground: 0 0% 8%;         /* #151515 */
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 46 100% 63%;        /* Yellow accent */
+    --primary-foreground: 0 0% 8%; /* #151515 */
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
@@ -33,16 +35,26 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
+    --shine-1: 46 100% 63%;     /* Primary yellow (matching your theme) */
+    --shine-2: 30 95% 60%;      /* Deep orange */
+    --shine-3: 15 90% 55%;      /* Burnt orange/red */
   }
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 8%;         /* Dark base */
+    --hero-bg: 69 30% 7%;         /* Dark with slight yellow tint for hero */
+    --about-bg: 0 0% 9%;          /* Slightly lighter than base for about */
+    --foreground: 0 0% 100%;      /* #FFFFFF */
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 46 100% 63%;        /* Yellow accent */
+    --primary-foreground: 0 0% 8%; /* #151515 */
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
@@ -59,6 +71,14 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
+    --shine-1: 46 100% 63%;     /* Keep primary yellow */
+    --shine-2: 30 95% 50%;      /* Darker deep orange */
+    --shine-3: 15 90% 45%;      /* Darker burnt orange/red */
   }
 }
 
@@ -69,4 +89,9 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+ }
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle at center, currentColor 1px, transparent 1px);
+  background-size: 24px 24px;
 }
