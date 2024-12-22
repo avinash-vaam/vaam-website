@@ -29,11 +29,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-[hsl(var(--about-bg))]">
+        {/* <div className="bg-[hsl(var(--about-bg))]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
             <Services />
           </div>
-        </div>
+        </div> */}
 
         <div className="bg-background dark:bg-background/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
